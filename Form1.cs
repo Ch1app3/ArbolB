@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,27 +8,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ArbolB
+namespace WindowsFormsApplication1
 {
-    public partial class ArbolB : Form
+    public partial class Form1 : Form
     {
         Nodo Raiz = new Nodo();
-        
-        
-        public ArbolB()
+        public Form1()
         {
             InitializeComponent();
             Raiz = null;
-            
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnADD_Click(object sender, EventArgs e)
         {
             Int32 cantidad = 0;
             Nodo NuevoNodo = new Nodo();
             NuevoNodo.Dato = Int32.Parse(textBox1.Text);
 
-            if (Raiz==null)
+            if (Raiz == null)
             {
                 Raiz = NuevoNodo;
                 cantidad++;
@@ -47,12 +44,27 @@ namespace ArbolB
                             NuevoNodo.Padre = Actual;
                             Actual.hijoIzq = NuevoNodo;
                             flag = true;
+                            cantidad++;
 
 
                         }
                         else
                         {
                             Actual = Actual.hijoIzq;
+                        }
+                    }
+                    else
+                    {
+                        if (Actual.hijoDer == null)
+                        {
+                            NuevoNodo.Padre = Actual;
+                            Actual.hijoDer = NuevoNodo;
+                            flag = true;
+                            cantidad++;
+                        }
+                        else
+                        {
+                            Actual = Actual.hijoDer;
                         }
                     }
                 }

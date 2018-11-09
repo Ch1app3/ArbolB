@@ -13,6 +13,8 @@ namespace WindowsFormsApplication1
     public partial class Form1 : Form
     {
         Nodo Raiz = new Nodo();
+        Int32 cantidad = 0;
+
         public Form1()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace WindowsFormsApplication1
 
         private void btnADD_Click(object sender, EventArgs e)
         {
-            Int32 cantidad = 0;
+            
             Nodo NuevoNodo = new Nodo();
             NuevoNodo.Dato = Int32.Parse(textBox1.Text);
 

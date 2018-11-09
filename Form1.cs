@@ -100,7 +100,7 @@ namespace WindowsFormsApplication1
             NodoSimple Duplicate = new NodoSimple();
             Duplicate.Dato = int.Parse(textBox1.Text);
             
-            if (Duplicate == Cima)
+            if (Duplicate.Dato == Cima.Dato)
             {
                 Repetido = true;
             }

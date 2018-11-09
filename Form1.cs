@@ -14,6 +14,11 @@ namespace WindowsFormsApplication1
     {
         Nodo Raiz = new Nodo();
         Int32 cantidad = 0;
+        Int32 cuantos = 0;
+        NodoSimple Base = new NodoSimple();
+        NodoSimple Cima = new NodoSimple();
+        bool Repetido = false;
+
 
         public Form1()
         {
@@ -23,14 +28,21 @@ namespace WindowsFormsApplication1
 
         private void btnADD_Click(object sender, EventArgs e)
         {
+
             
             Nodo NuevoNodo = new Nodo();
             NuevoNodo.Dato = Int32.Parse(textBox1.Text);
+            NoEsRepetido();
 
+            if (Repetido == false)
+            {
+
+            
             if (Raiz == null)
             {
                 Raiz = NuevoNodo;
                 cantidad++;
+                Apilo();
             }
             else
             {
@@ -47,6 +59,7 @@ namespace WindowsFormsApplication1
                             Actual.hijoIzq = NuevoNodo;
                             flag = true;
                             cantidad++;
+                            Apilo();
 
 
                         }
@@ -63,6 +76,7 @@ namespace WindowsFormsApplication1
                             Actual.hijoDer = NuevoNodo;
                             flag = true;
                             cantidad++;
+                            Apilo();
                         }
                         else
                         {
@@ -71,6 +85,56 @@ namespace WindowsFormsApplication1
                     }
                 }
 
+            }
+            }else
+            {
+                MessageBox.Show("El dato ya existe en el Arbol");
+            }
+        }
+
+        private void NoEsRepetido()
+        {
+
+            NodoSimple Duplicate = new WindowsFormsApplication1.NodoSimple();
+            Duplicate.Dato = int.Parse(textBox1.Text);
+            NodoSimple ActualDuplicate = new NodoSimple();
+            ActualDuplicate = Cima;
+            while (ActualDuplicate.SIGUIENTE != null)
+            {
+                if (ActualDuplicate.Dato == Duplicate.Dato)
+                {
+                    Repetido = true;
+                    
+                }
+                else
+                {
+                    ActualDuplicate = ActualDuplicate.SIGUIENTE;
+                }
+            }
+        }
+
+        private void Apilo()
+        {
+            Nodo NuevoNodoPila = new Nodo();
+            NuevoNodoPila.Dato = Int32.Parse(textBox1.Text);
+
+            if (cuantos == 0)
+            {
+                MessageBox.Show("La Pila estba vacia");
+                NodoSimple NuevoNodoSimple = new NodoSimple();
+                NuevoNodoSimple.Dato = NuevoNodoPila.Dato;
+                cuantos++;
+                Cima = NuevoNodoSimple;
+                Base = NuevoNodoSimple;
+
+            }
+            else
+            {
+                NodoSimple NuevoNodoSimple = new NodoSimple();
+                NuevoNodoSimple.Dato = NuevoNodoPila.Dato;
+                cuantos++;
+                NuevoNodoSimple.SIGUIENTE = Cima;
+                Cima = NuevoNodoSimple;
             }
         }
 

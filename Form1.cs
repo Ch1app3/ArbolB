@@ -24,6 +24,7 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
             Raiz = null;
+            Cima = null;
         }
 
         private void btnADD_Click(object sender, EventArgs e)
@@ -32,7 +33,7 @@ namespace WindowsFormsApplication1
             
             Nodo NuevoNodo = new Nodo();
             NuevoNodo.Dato = Int32.Parse(textBox1.Text);
-            NoEsRepetido();
+            
                         
             if (Raiz == null)
             {
@@ -42,6 +43,7 @@ namespace WindowsFormsApplication1
             }
             else
             {
+                NoEsRepetido();
                 if (Repetido == false)
                 {
                     Nodo Actual = new Nodo();
@@ -97,18 +99,28 @@ namespace WindowsFormsApplication1
 
             NodoSimple Duplicate = new NodoSimple();
             Duplicate.Dato = int.Parse(textBox1.Text);
-            NodoSimple ActualDuplicate = new NodoSimple();
-            ActualDuplicate = Cima;
-            while (ActualDuplicate.SIGUIENTE != null)
+            
+            if (Duplicate == Cima)
             {
-                if (ActualDuplicate.Dato == Duplicate.Dato)
+                Repetido = true;
+            }
+            else
+            {
+                NodoSimple ActualDuplicate = new NodoSimple();
+                ActualDuplicate = Cima;
+
+
+                while (ActualDuplicate.SIGUIENTE != null)
                 {
-                    Repetido = true;
-                    
-                }
-                else
-                {
-                    ActualDuplicate = ActualDuplicate.SIGUIENTE;
+                    if (ActualDuplicate.Dato == Duplicate.Dato)
+                    {
+                        Repetido = true;
+
+                    }
+                    else
+                    {
+                        ActualDuplicate = ActualDuplicate.SIGUIENTE;
+                    }
                 }
             }
         }

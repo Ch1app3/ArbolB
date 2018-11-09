@@ -33,11 +33,7 @@ namespace WindowsFormsApplication1
             Nodo NuevoNodo = new Nodo();
             NuevoNodo.Dato = Int32.Parse(textBox1.Text);
             NoEsRepetido();
-
-            if (Repetido == false)
-            {
-
-            
+                        
             if (Raiz == null)
             {
                 Raiz = NuevoNodo;
@@ -46,56 +42,60 @@ namespace WindowsFormsApplication1
             }
             else
             {
-                Nodo Actual = new Nodo();
-                Actual = Raiz;
-                bool flag = false;
-                while (flag == false)
+                if (Repetido == false)
                 {
-                    if (NuevoNodo.Dato < Actual.Dato)
+                    Nodo Actual = new Nodo();
+                    Actual = Raiz;
+                    bool flag = false;
+                    while (flag == false)
                     {
-                        if (Actual.hijoIzq == null)
+                        if (NuevoNodo.Dato < Actual.Dato)
                         {
-                            NuevoNodo.Padre = Actual;
-                            Actual.hijoIzq = NuevoNodo;
-                            flag = true;
-                            cantidad++;
-                            Apilo();
+                            if (Actual.hijoIzq == null)
+                            {
+                                NuevoNodo.Padre = Actual;
+                                Actual.hijoIzq = NuevoNodo;
+                                flag = true;
+                                cantidad++;
+                                Apilo();
 
 
+                            }
+                            else
+                            {
+                                Actual = Actual.hijoIzq;
+                            }
                         }
                         else
                         {
-                            Actual = Actual.hijoIzq;
+                            if (Actual.hijoDer == null)
+                            {
+                                NuevoNodo.Padre = Actual;
+                                Actual.hijoDer = NuevoNodo;
+                                flag = true;
+                                cantidad++;
+                                Apilo();
+                            }
+                            else
+                            {
+                                Actual = Actual.hijoDer;
+                            }
                         }
                     }
-                    else
-                    {
-                        if (Actual.hijoDer == null)
-                        {
-                            NuevoNodo.Padre = Actual;
-                            Actual.hijoDer = NuevoNodo;
-                            flag = true;
-                            cantidad++;
-                            Apilo();
-                        }
-                        else
-                        {
-                            Actual = Actual.hijoDer;
-                        }
-                    }
+
+
                 }
-
-            }
-            }else
-            {
-                MessageBox.Show("El dato ya existe en el Arbol");
+                else
+                {
+                    MessageBox.Show("El dato ya existe en el Arbol");
+                }
             }
         }
 
         private void NoEsRepetido()
         {
 
-            NodoSimple Duplicate = new WindowsFormsApplication1.NodoSimple();
+            NodoSimple Duplicate = new NodoSimple();
             Duplicate.Dato = int.Parse(textBox1.Text);
             NodoSimple ActualDuplicate = new NodoSimple();
             ActualDuplicate = Cima;

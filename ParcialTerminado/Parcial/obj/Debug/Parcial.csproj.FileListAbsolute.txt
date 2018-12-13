@@ -1,0 +1,39 @@
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\bin\Debug\Parcial.exe.config
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\bin\Debug\Parcial.exe
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\bin\Debug\Parcial.pdb
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\obj\Debug\Parcial.csprojResolveAssemblyReference.cache
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\obj\Debug\Parcial.Form1.resources
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\obj\Debug\Parcial.Properties.Resources.resources
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\obj\Debug\Parcial.csproj.GenerateResource.Cache
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\obj\Debug\Parcial.exe
+c:\users\navegador\documents\visual studio 2015\Projects\Parcial\Parcial\obj\Debug\Parcial.pdb
+D:\Downloads\Parcial\Parcial\bin\Debug\Parcial.exe.config
+D:\Downloads\Parcial\Parcial\bin\Debug\Parcial.exe
+D:\Downloads\Parcial\Parcial\bin\Debug\Parcial.pdb
+D:\Downloads\Parcial\Parcial\obj\Debug\Parcial.Form1.resources
+D:\Downloads\Parcial\Parcial\obj\Debug\Parcial.Properties.Resources.resources
+D:\Downloads\Parcial\Parcial\obj\Debug\Parcial.csproj.GenerateResource.cache
+D:\Downloads\Parcial\Parcial\obj\Debug\Parcial.csproj.CoreCompileInputs.cache
+D:\Downloads\Parcial\Parcial\obj\Debug\Parcial.exe
+D:\Downloads\Parcial\Parcial\obj\Debug\Parcial.pdb
+D:\Downloads\Parcial\Parcial\obj\Debug\Parcial.csprojAssemblyReference.cache
+D:\Downloads\ParcialTerminado\Parcial\bin\Debug\Parcial.exe.config
+D:\Downloads\ParcialTerminado\Parcial\bin\Debug\Parcial.exe
+D:\Downloads\ParcialTerminado\Parcial\bin\Debug\Parcial.pdb
+D:\Downloads\ParcialTerminado\Parcial\obj\Debug\Parcial.csprojAssemblyReference.cache
+D:\Downloads\ParcialTerminado\Parcial\obj\Debug\Parcial.Form1.resources
+D:\Downloads\ParcialTerminado\Parcial\obj\Debug\Parcial.Properties.Resources.resources
+D:\Downloads\ParcialTerminado\Parcial\obj\Debug\Parcial.csproj.GenerateResource.cache
+D:\Downloads\ParcialTerminado\Parcial\obj\Debug\Parcial.csproj.CoreCompileInputs.cache
+D:\Downloads\ParcialTerminado\Parcial\obj\Debug\Parcial.exe
+D:\Downloads\ParcialTerminado\Parcial\obj\Debug\Parcial.pdb
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\bin\Debug\Parcial.exe.config
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\bin\Debug\Parcial.exe
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\bin\Debug\Parcial.pdb
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\obj\Debug\Parcial.csprojAssemblyReference.cache
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\obj\Debug\Parcial.Form1.resources
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\obj\Debug\Parcial.Properties.Resources.resources
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\obj\Debug\Parcial.csproj.GenerateResource.cache
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\obj\Debug\Parcial.csproj.CoreCompileInputs.cache
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\obj\Debug\Parcial.exe
+C:\Users\Mariano Chiappe\source\repos\ParcialTerminado\Parcial\obj\Debug\Parcial.pdb
